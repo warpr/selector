@@ -1,5 +1,6 @@
 """Unit test `Selector()` instantiation."""
 
+import pytest
 from flexmock import flexmock
 
 import selector
@@ -7,6 +8,7 @@ import selector
 from . import mocks
 
 
+@pytest.mark.xfail
 def test_instantiate_selector_args():
     """Instantiate a `Selector()` with the works."""
     myparser = lambda x: x
